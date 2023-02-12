@@ -1,5 +1,5 @@
 import React from 'react'
-import "./login.css"
+import "./signup.css"
 const logo = require('../static/logo.png')
 const bluebg = require('../static/signup.png')
 const Si = () => {
