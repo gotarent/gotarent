@@ -1,5 +1,5 @@
 body{
-    background-color: gray;
+    background-color:gray ;
 }
 .m-login{
     display: flex;
@@ -14,10 +14,11 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 105vh;
     width: 40vw;
     position: absolute;
     margin-top: 2rem;
+    box-shadow:10vw #000000 ;
 }
 .blue{
     width: 3rem;
@@ -25,8 +26,8 @@ body{
 }
 #bluebg{
     position: relative;
-    top:-1.8rem;
-    left: -17.6rem;
+    top: 10rem;
+    left: -14.6rem;
     width: fit-content;
     
 }
@@ -37,7 +38,7 @@ body{
     position: relative;
     left: 3vw;
     width: 18rem;
-    top:3em;
+    top:5em;
 }
 .text{
     width: 18vw;
@@ -56,6 +57,7 @@ form fieldset{
     border: 3px solid aqua;
     border-radius: 7px;
     margin: 3rem;
+    height: 2px;
     
 }
 
