@@ -1,7 +1,7 @@
 const NodeMailer = require("nodemailer")
 const getOtp = require("otp-generator")
 const userOtp = require("../Model/userOTPverification")
-const sendMail = async (email) => {
+const sendMail = async (email, userid) => {
   try {
     const transporter = await NodeMailer.createTransport({
       service: "Gmail",
@@ -22,15 +22,15 @@ const sendMail = async (email) => {
       to: `${email}`,
       subject: "Verify Email",
       text: "Email Verification",
-      html: `<h1>${otp}</h1>`,
+      html: `<h1>Your Verification Code is ${otp}</h1>`,
     })
     const verification = new userOtp({
+      user_id: userid,
       otp: otp,
       createat: Date.now(),
       expires: Date.now() + 3600000, // 1 hours
     })
-    const result = await verification.save()
-    console.log(result)
+    await verification.save()
     return info
   } catch (error) {
     console.log(error)

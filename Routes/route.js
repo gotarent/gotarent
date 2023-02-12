@@ -43,10 +43,13 @@ route.post(
     if (!result) {
       return res.status(200).json({ message: "Signup UnSuccessful" })
     }
-    await sendMail(email)
+    await sendMail(email, result._id.toString())
     res
       .status(200)
-      .json({ message: "Signup Successful and Email Send Successfully" })
+      .json({
+        message: "Signup Successful and Email Send Successfully",
+        userId: result._id,
+      })
   }
 )
 
