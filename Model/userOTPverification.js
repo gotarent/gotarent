@@ -1,6 +1,9 @@
 const mongoose = require("mongoose")
 
 const otpSchema = mongoose.Schema({
+  user_id: {
+    type: mongoose.Schema.ObjectId,
+  },
   otp: {
     type: Number,
   },
