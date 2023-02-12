@@ -1,0 +1,93 @@
+.m-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: gray;
+}
+.secondary{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 40vw;
+    position: absolute;
+    margin-top: 2rem;
+}
+.blue{
+    width: 3rem;
+    height: 3rem;
+}
+#bluebg{
+    position: relative;
+    top:-1.8rem;
+    left: -17.6rem;
+    width: fit-content;
+    
+}
+#bluebg img{
+    overflow: hidden;
+}
+.log img{
+    position: relative;
+    left: 3vw;
+    width: 18rem;
+    top:3em;
+}
+.text{
+    width: 18vw;
+    position: relative;
+    /* width: 15vw; */
+    top: 3em;
+}
+.text p{
+    font-weight: bold;
+    font-size: larger;
+}
+.form{
+    position: relative;
+}
+form fieldset{
+    border: 3px solid aqua;
+    border-radius: 7px;
+    margin: 3rem;
+    
+}
+
+input{
+    width:30vw;
+    border: 0px none #ffffff;
+    height: 6vh;
+    border-top-style:none;
+    border-bottom-style:none;
+    border-left-style:none;
+    border-right-style:none;
+    outline: none;
+    
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    background-color: aqua;
+    border: 2px solid white;
+    border-radius: 9px;
+    width: 30vw;
+    height: 12vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+.anc{
+    display: flex;
+    align-items: center;
+}
+.anc a{
+    text-decoration: none;
+    color: aqua;
+    margin: 1vw;
+}
