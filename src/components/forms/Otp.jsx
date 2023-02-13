@@ -5,7 +5,7 @@ const Otp = () => {
    <>
    
    </>
-   //this is syntactic sugar
+   //this is syntactic sugar syntax
   )
 }
 
