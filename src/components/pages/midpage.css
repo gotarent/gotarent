@@ -1,0 +1,148 @@
+*{
+    margin: 0, 0, 8rem, 20rem  ;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+}
+.container .rightContainer{
+    
+    margin-top: 2.6rem;
+    width: 50%;
+}
+.container .rightContainer .head-text h2{
+    font-size: 2.3rem;
+}
+.myList ul li{
+    list-style: none;
+}
+.myList ul li .pri-text{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.rightContainer .btn-group button{
+    border-radius: 1.1em;
+    width: 163px;
+    height: 49px;
+    color: black;
+    border: 2px solid red;
+    outline: none;
+    font-weight: bold;
+    background-color: red;
+    margin: 1em;
+    
+}
+.rightContainer .btn-group button:hover{
+    transition: 1s;
+    transform: scale(1.1);
+}
+#white-btn{
+    border: 2px solid red;
+    background-color: white;
+}
+.container .leftContainer{
+    width: 50%;
+}
+.mid-container{
+    display: flex;
+    margin-bottom: 3rem;
+}
+.mid-container .myImgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.mid-container .myImgs i{
+    margin: 1px;
+    padding: 2px;
+}
+.myList{
+    margin-top: 1.5rem;
+
+}
+.head-text h2{
+    padding: 5px 5px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.leftContainer{
+    /* margin-top: 2rem; */
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+    
+    
+}
+.card-ok{
+
+    margin-top: 2rem;
+}
+.card-ok img{
+    position: relative;
+    right: -2rem;
+    width: 14rem;
+}
+.text-area{
+    position: relative;
+    top: -1rem;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 18rem;
+    height: 4rem;
+    /* margin: auto; */
+    border: 1px solid rgba(29, 175, 228, 0.986);
+    background-color:rgba(29, 175, 228, 0.986);
+    border-radius: 1.2em;
+}
+.pri-a-text{
+    height: 1rem;
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 18rem;
+}
+.sec-a-text{
+    height: 1rem;   
+}
+
+
+.blue-pic{
+    position: relative;
+    top: 2.5rem;
+    width: 100vw;
+}
+.blue-pic img{
+    position: absolute;
+    
+    z-index: -1;
+    width: 100vw;
+    height: 14rem;
+}
+.blue-text{
+    position: relative;
+
+    top: 5rem;
+    left: 16rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selmon-text{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.btn{
+    position: relative;
+    left:10rem;
+}
+.btn button{
+    border: 2px solid white;
+    width: 11rem;
+    height: 3rem;
+    border-radius: 2rem;
+}
+
