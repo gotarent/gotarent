@@ -24,7 +24,7 @@ class _OtpPageState extends State<OtpPage> {
       appBar: AppBar(
         title: const Text('hello'),
       ),
-      body: const Text('otp section'),
+      body: const Text('ot section'),
     );
   }
 }
