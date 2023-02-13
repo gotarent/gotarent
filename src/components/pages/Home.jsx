@@ -1,8 +1,9 @@
 import React from "react";
-import "./Navbar";
 import "./Home.css";
-import Mid from "./MidPage.jsx"
-import "./home@media.css";
+// import Mid from "./MidPage.jsx"
+// import Footer from './footer';
+import Navbar from "./Navbar"
+// import "./home@media.css";
 const gtk = require("../static/Picture@1x.png");
 const wave = require("../static/drawnline1@1x.png");
 const rectangle = require("../static/rectangular shape@1x.png");
@@ -11,7 +12,45 @@ const time = new Date().toLocaleTimeString();
 const Home = () => {
   return (
     <>
-      <div className="body">
+      <Navbar />
+      <div className="home">
+        <div className="first-cont">
+          <div className="m-text">
+            <h1>Discover your next cozy </h1>
+            <h1> retreat, now on our platform.</h1>
+          </div>
+          <div className="img-group">
+            <div className="m-img">
+              <img src={gtk} alt="gtk image" />
+            </div>
+            <div className="s-img">
+              <img src={rectangle} alt="" />
+            </div>
+          </div>
+          <div className="red-bg">
+            <div className="red-content">
+              <p className="bold">Where do you need a rental?</p>
+              <p className="gold">chisopani</p>
+            </div>
+            <div className="red-content2">
+              <p className="bold">From</p>
+              <p className="gold">18 march 14:00</p>
+            </div>
+            <div className="red-content3">
+              <p className="bold">where</p>
+              <p className="gold">20 march 21:30</p>
+            </div>
+            <div className="blue-bg">
+              <p className="bold">serch rentel</p>
+            </div>
+          </div>
+          <div className="s-text">
+            <p className="bolder">More effecient rental system is possible.</p>
+            <p>Our rental accomodation online system provides a platform that simplifies</p>
+          </div>
+        </div>
+      </div>
+      {/*<div className="body">
           <div className="m-b">
             <div className="img-gtk">
               <img src={gtk} alt="gangtok"></img>
@@ -29,11 +68,11 @@ const Home = () => {
                 <h1> retreat, now on our platform.</h1>
               </div>
               <div className="r-bg d-f-row">
-                <div className="i-t">  {/* i-t: text left*/}
+                <div className="i-t">  
                   <div className="m-text">
-                    {/* m-text: main text*/}
+                    
                     <p className="b-text">
-                      {/*b-text: bold text  */}
+                     
                       Where do you need a rental?
                       <br />
                     </p>
@@ -91,6 +130,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Footer/> */}
     </>
   );
 };

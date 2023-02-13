@@ -1,96 +1,119 @@
-body{
-    background-color: gray;
+.container{
+    height: 100vh;
+    max-width: 100vw;
+    background-color: #f4f4f4;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
-.m-login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150vh;
-    background-color: gray;
-}
-.secondary{
-    display: flex;
+.sec-container{
+    max-width: 50vw;
+    height: 90vh;
     background-color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 140vh;
-    width: 40vw;
-    position: absolute;
-    margin-top: 2rem;
-    box-shadow:10vw #000000 ;
-}
-.blue{
-    width: 3rem;
-    height: 3rem;
-}
-#bluebg{
-    position: relative;
-    top: -5.3vh;
-    left: -17.8rem;
-    width: fit-content;
-}
-#bluebg img{
-    overflow: hidden;
-}
-.log img{
-    position: relative;
-    left: 3vw;
-    width: 18rem;
-    top:3em;
-}
-.text{
-    width: 18vw;
-    position: relative;
-    /* width: 15vw; */
-    top: 3em;
-}
-.text p{
-    font-weight: bold;
-    font-size: larger;
-}
-.form{
-    position: relative;
-}
-form fieldset{
-    border: 3px solid aqua;
-    border-radius: 7px;
-    margin: 3rem;
+    margin: auto;
+    border-top-right-radius: 6rem;
+    border-bottom-right-radius: 6rem;
+    border-bottom-left-radius: 6rem;
+    border-top-left-radius: 6rem;
+    box-shadow: 10px 10px 10px grey;
+
     
 }
+.img{
+    display: flex;
+    /* justify-content: ; */
+    
+}
+.img .left{
+    max-width:50%;
+    /* padding: 1rem; */
+}
+/* .img .right{
+    max-width: 50%;
+    padding: 5rem; */
 
-input{
-    width:30vw;
-    border: 0px none #ffffff;
-    height: 6vh;
-    border-top-style:none;
-    border-bottom-style:none;
-    border-left-style:none;
-    border-right-style:none;
+
+/* .img .right img{
+    max-width: 2rem;
+} */
+.head-text{
+    display: flex;
+    flex-wrap: wrap;
+    height: 2rem;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.head-text p{
+    margin: 1rem 1rem;
+   
+    max-width: 100vw;
+    text-transform: uppercase;
+}
+.head-text p span{
+    font-weight: bold;
+    color: #71bdf6;
+}
+/* .form-group{
+
+    
+
+} */
+.form-group fieldset{
+    max-width: 50%;
+    height: 2.5rem;
+    margin: 1.8rem auto;
+    border-color: aqua;
+    border-radius: 1.5rem;
+}
+.form-group fieldset input{
+    width: 15vw;
     outline: none;
+    border: none;
     
 }
-
-.btn{
+.form-group .btn{
     display: flex;
     justify-content: center;
-}
-.btn button{
-    background-color: aqua;
-    border: 2px solid white;
-    border-radius: 9px;
-    width: 30vw;
-    height: 12vh;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: aliceblue;
-}
-.anc{
-    display: flex;
     align-items: center;
+    max-width: 100%;
+    padding: 1rem;
+    
 }
-.anc a{
-    text-decoration: none;
-    color: aqua;
-    margin: 1vw;
+.form-group .btn button{
+    padding: 2vh 8vw;
+    /* max-width: 50rem; */
+    font-size: 1rem;
+    /* background-color: #71bdf6; */
+    background-color: rgb(33, 255, 255);
+    border: 0px;
+    border-radius: 3rem;
+
+}
+.form-group .btn button:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    text-transform:capitalize;
+    font-size: medium;
+}
+.bottom .para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.5rem ;
+    height: 2.5rem;
+}
+.bottom .link-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.5rem ;
+    height: 2.5rem;
 }

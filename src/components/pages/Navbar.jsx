@@ -12,19 +12,6 @@ const Navbar = () => {
                     <img src= {logo} alt="img here" className='logo'></img>    
                  </li>
                 </div>
-                <div className="list-item">
-                  <li>
-                    <a to = "/RentalRooms">Rental Rooms</a>
-                  </li>
-                  <li>
-                    <a to = "/Pg">Paying Guest</a>
-                  </li>
-                  <li>
-                    <a to = "Hostels">Hostels</a>
-                  </li>
-
-                </div>
-             
             </div>
             <div className="right-nav">
               <li>
