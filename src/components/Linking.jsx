@@ -11,8 +11,7 @@ const Linking = () => {
                 <Navbar/>
                 <Routes>
                     <Route path='/home' element={<MidPage/>} />
-                    {/* <Route path = "/Signup" element= {<SignupForm/>}/> */}
-                    {/* <Route path = "/Login" element= {<BasicForm/>}/> */}
+                    <Route path='/login' element={<Login />}/>
                 </Routes>
             </Router>
         </>
