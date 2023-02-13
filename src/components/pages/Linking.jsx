@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import SignupForm from './forms/SignupForm'
-import BasicForm from './forms/BasicForm';
+import SignupForm from './Signup'
+import BasicForm from './login';
 import Navbar from './Navbar';
 
 const Linking = () => {

@@ -3,7 +3,8 @@ import './App.css';
 // import Navbar from './components/pages/Navbar';
 // import Footer from './components/pages/footer';
 // import Login from './components/pages/login';
-import Si from './components/pages/Signup';
+// import Si from './components/pages/Signup';
+import Linking from "./components/pages/Linking"
 function App() {
   return (
 <>
@@ -11,7 +12,8 @@ function App() {
     <Home/>
     <Footer/>*/}
     {/* <Login/>  */}
-    <Si/>
+    {/* <Si/> */}
+    <Linking/>
 </>
   );
 }
