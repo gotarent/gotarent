@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './nav.css'
 const logo = require("../imges/logo.png")
 const Navbar = () => {
@@ -12,16 +12,29 @@ const Navbar = () => {
                     <img src= {logo} alt="img here" className='logo'></img>    
                  </li>
                 </div>
+                <div className="list-item">
+                  <li>
+                    <Link to = "/RentalRooms">Rental Rooms</Link>
+                  </li>
+                  <li>
+                    <Link to = "/Pg">Paying Guest</Link>
+                  </li>
+                  <li>
+                    <Link to = "Hostels">Hostels</Link>
+                  </li>
+
+                </div>
+             
             </div>
             <div className="right-nav">
               <li>
-                <a to = "/login">Log-In</a>
+                <Link to = "">Log-In</Link>
               </li>
               <li>
-                <a to = "/Signup">Sign-Up</a>
+                <Link to = "/SignupForm">Sign-Up</Link>
               </li>
               <div className="search">
-                <i className="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                <input type="text" placeholder='Search Your Rental' className='myInput'/>
               </div>
             </div>
