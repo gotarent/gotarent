@@ -49,6 +49,7 @@
     position: relative;
     top: 20vh;
     left: 20vw;
+    box-shadow: 2px 2px 10px;
     /* align-items: center; */
 }
 .red-bg .bold{
@@ -84,7 +85,7 @@
 .second-cont{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height:70vh;
     
     margin-left: 2vw;
 }
@@ -102,6 +103,7 @@
     left: 4vw;
     top: -26vh;
     margin-left: 2vw;
+    text-transform: capitalize;
 }
 .myList ul li{
     list-style: none;
@@ -127,6 +129,7 @@
     background-color: red;
     color: black;
 }
+
 .right{
     display: flex;
     flex-direction: row;
@@ -134,7 +137,7 @@
     width: 30vw;
     justify-content: space-evenly;
     height: 54vh;
-
+    text-transform: capitalize;
 }
 .card-ok{
     height: fit-content;
@@ -151,4 +154,28 @@
 }
 .pri-a-text{
     font-weight: 700;
+}
+.blue{
+    background-color: aqua;
+    height: 25vh;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px;
+}
+.b-left{
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 8vw;
+    position: relative;
+    margin-left: 4vh;
+}
+.boldtext{
+    font-size: x-large;
+}
+.r-wave img{
+    top: -40vh;
+    z-index: -1;
+    position: relative;
+    left: -3vw;
 }

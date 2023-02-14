@@ -3,6 +3,7 @@ import "./Home.css";
 import Navbar from "./Navbar"
 const gtk = require("../static/Picture@1x.png");
 const wave = require("../static/drawnline1@1x.png");
+const rwave = require("../static/r-wave.jpg");
 const rectangle = require("../static/rectangular shape@1x.png");
 const card = require("../imges/card.jpg")
 const date = new Date().toLocaleDateString();
@@ -77,6 +78,7 @@ const Home = () => {
               <button id="red-btn">Find a Rental</button>
               <button id="white-btn">Share your property</button>
             </div>
+
           </div>
           <div className="right">
             <div className="card-ok">
@@ -107,6 +109,17 @@ const Home = () => {
                 <p className='sec-a-text'>this is secondary text</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="blue">
+          <div className="b-left">
+            <p className="boldtext">
+              Help us protect you from scams
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis eos omnis, accusantium nesciunt enim explicabo eius nobis et nulla labore laudantium repellat quo quos aliquam rerum blanditiis mollitia neque sapiente asperiores! Porro accusamus debitis explicabo incidunt nemo quod sapiente. Nostrum in, itaque doloremque architecto dolorum qui exercitationem possimus eius! Beatae?</p>
+          </div>
+          <div className="r-wave">
+            <img src={rwave} alt="" />
           </div>
         </div>
       </div>
