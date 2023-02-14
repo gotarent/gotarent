@@ -1,12 +1,10 @@
 import React from "react";
 import "./Home.css";
-// import Mid from "./MidPage.jsx"
-// import Footer from './footer';
 import Navbar from "./Navbar"
-// import "./home@media.css";
 const gtk = require("../static/Picture@1x.png");
 const wave = require("../static/drawnline1@1x.png");
 const rectangle = require("../static/rectangular shape@1x.png");
+const card = require("../imges/card.jpg")
 const date = new Date().toLocaleDateString();
 const time = new Date().toLocaleTimeString();
 const Home = () => {
@@ -25,6 +23,9 @@ const Home = () => {
             </div>
             <div className="s-img">
               <img src={rectangle} alt="" />
+            </div>
+            <div className="wave">
+              <img src={wave} alt="" />
             </div>
           </div>
           <div className="red-bg">
@@ -47,6 +48,65 @@ const Home = () => {
           <div className="s-text">
             <p className="bolder">More effecient rental system is possible.</p>
             <p>Our rental accomodation online system provides a platform that simplifies</p>
+          </div>
+        </div>
+        <div className="second-cont">
+          <div className="left">
+            <div className="myImgs">
+              <i class="fa-sharp fa-solid fa-user-shield fa-2xl"></i>
+              <i class="fa-solid fa-people-roof fa-2xl"></i>
+              <i class="phone fa-sharp fa-solid fa-mobile fa-2xl"></i>
+            </div>
+            <div className="myList">
+              <ul>
+                <li>
+                  <span className='pri-text'>Always safe</span>
+                  <p className='sec-text'>All rentals include insurance and 24/7 assistance</p>
+                </li>
+                <li>
+                  <span className='pri-text'>Accomodation for every moment</span>
+                  <p className='sec-text'>All rentals include insurance and 24/7 assistance</p>
+                </li>
+                <li>
+                  <span className='pri-text'>use our app</span>
+                  <p className='sec-text'>Best app you can find anywhere</p>
+                </li>
+              </ul>
+            </div>
+            <div className="btn-group">
+              <button id="red-btn">Find a Rental</button>
+              <button id="white-btn">Share your property</button>
+            </div>
+          </div>
+          <div className="right">
+            <div className="card-ok">
+              <img src={card} alt="cardHere" className='card' />
+              <div className="text-area">
+                <p className='pri-a-text'>this is  primary text</p>
+                <p className='sec-a-text'>this is secondary text</p>
+              </div>
+            </div>
+            <div className="card-ok">
+              <img src={card} alt="cardHere" className='card' />
+              <div className="text-area">
+                <p className='pri-a-text'>this is  primary text</p>
+                <p className='sec-a-text'>this is secondary text</p>
+              </div>
+            </div>
+            <div className="card-ok">
+              <img src={card} alt="cardHere" className='card' />
+              <div className="text-area">
+                <p className='pri-a-text'>this is  primary text</p>
+                <p className='sec-a-text'>this is secondary text</p>
+              </div>
+            </div>
+            <div className="card-ok">
+              <img src={card} alt="cardHere" className='card' />
+              <div className="text-area">
+                <p className='pri-a-text'>this is  primary text</p>
+                <p className='sec-a-text'>this is secondary text</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
