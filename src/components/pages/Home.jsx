@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Navbar from "./Navbar"
-import Footer from "../pages/footer"
+// import Footer from "../pages/footer"
 const gtk = require("../static/Picture@1x.png");
 const wave = require("../static/drawnline1@1x.png");
 const rwave = require("../static/r-wave.jpg");
@@ -122,12 +122,38 @@ const Home = () => {
           <div className="b-right">
             <button className="btn">More Information</button>
           </div>
-          </div>
-          <div className="r-wave">
-            <img src={rwave} alt="" />
+        </div>
+        <div className="r-wave">
+          <img src={rwave} alt="" />
         </div>
       </div>
-      <Footer/>
+      <div className="third">
+        <div className="t-text">
+          <p className="t-bold">your next accomodation with got a rent</p>
+          <div className="t-left">
+            <div className="t-textl"><h3>Easy Booking and managment</h3><p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis alias quisquam harum aliquam ratione, debitis pariatur excepturi sapiente possimus blanditiis esse, officiis, laudantium eaque. Laborum neque quos odit. Corporis exercitationem accusamus beatae facere totam quas iure magni quasi. Temporibus expedita ut sed optio nisi, provident voluptatem iusto consequuntur aliquam.</p></div>
+            <div className="t-textr">
+            <h3>
+              increased efficency
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius in deserunt nobis inventore recusandae nulla sed, culpa exercitationem, esse quis voluptate quidem dolore repellat numquam modi rerum laboriosam! Voluptatem, molestiae? Repellendus incidunt inventore labore, eos a odio exercitationem, ducimus error veniam minima provident similique modi laboriosam, velit tempore quae autem.
+              </p>
+            </div>
+          </div>
+            <div className="tl-btn">
+              <button>look for</button>
+            </div>
+        </div>
+          <div className="t-right">
+            <div className="tr-text">
+              <h3>improved costumer experience</h3>
+              <p className="tr-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt amet rerum facere inventore, aspernatur dolorum veniam repellat unde iste quibusdam. Eligendi provident aliquam modi eius eveniet id aperiam quos? Neque enim molestias modi nam, architecto ullam, quae minus ipsa provident vel at veritatis, recusandae reprehenderit non ex et autem.</p>
+            </div>
+          </div>
+      </div>
+      {/* <Footer/> */}
     </>
   );
 };

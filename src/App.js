@@ -6,14 +6,13 @@ import './App.css';
 // import Login from './components/pages/login';
 // import Sup from './components/pages/Sup';
 import Linking from "./components/pages/Linking"
+import Otp from "./components/pages/Otp"
+
 function App() {
   return (
 <>
-     {/* <Navbar/>
-    <Home/>
-    <Footer/>*/}
-    {/* <Login/>  */}
-    {/* <Sup/> */}
+  <Otp/>
+
     <Linking/>
 </>
   );
