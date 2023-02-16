@@ -61,20 +61,21 @@
     
 
 } */
-.form-group fieldset{
+.si-form-group fieldset{
     max-width: 50%;
-    height: 2.5rem;
+    height: 3.5rem;
     margin: 0.8rem auto;
     border-color: aqua;
-    border-radius: 1.5rem;
+    border-radius: 10px;
 }
-.form-group fieldset input{
-    width: 15vw;
+.si-form-group fieldset input{
+    width: 18vw;
     outline: none;
     border: none;
+    text-align: center;
     
 }
-.form-group .btn{
+.si-form-group .btn{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,15 +83,23 @@
     padding: 1rem;
     
 }
-.form-group .btn button{
+.si-form-group .btn button{
     padding: 2vh 8vw;
     /* max-width: 50rem; */
     font-size: 1rem;
     /* background-color: #71bdf6; */
     background-color: rgb(33, 255, 255);
     border: 0px;
-    border-radius: 3rem;
+    border-radius: 10px;
 
+}
+.em {
+    width: 5vw;
+    margin: 0 2vw;
+}
+#con{
+    width: 10.5vw;
+    margin:0 2vw;
 }
 .form-group .btn button:hover{
     transition: 0.5s;
@@ -130,4 +139,18 @@
     align-items: center;
     margin:0.5rem ;
     height: 2.5rem;
+}
+.link-signup a{
+    text-decoration: none;
+}
+.a{
+    text-decoration: none;
+}
+.rights{
+    position: absolute;
+    bottom: 3vh;
+    border-bottom: 2px solid black;
+    width: 31vw;
+    text-align: center;
+    /* margin-top: 3vh; */
 }

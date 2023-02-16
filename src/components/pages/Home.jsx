@@ -76,8 +76,8 @@ const Home = () => {
               </ul>
             </div>
             <div className="btn-group">
-              <button id="red-btn">Find a Rental</button>
-              <button id="white-btn">Share your property</button>
+              <button id="red-btn" type="submit">Find a Rental</button>
+              <button id="white-btn" type="submit">Share your property</button>
             </div>
 
           </div>
@@ -120,7 +120,7 @@ const Home = () => {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis eos omnis, accusantium nesciunt enim explicabo eius nobis et nulla labore laudantium repellat quo quos aliquam rerum blanditiis mollitia neque sapiente asperiores! Porro accusamus debitis explicabo incidunt nemo quod sapiente. Nostrum in, itaque doloremque architecto dolorum qui exercitationem possimus eius! Beatae?</p>
           </div>
           <div className="b-right">
-            <button className="btn">More Information</button>
+            <button className="butn">More Information</button>
           </div>
         </div>
         <div className="r-wave">
@@ -143,7 +143,7 @@ const Home = () => {
             </div>
           </div>
             <div className="tl-btn">
-              <button>look for</button>
+              <button type="button">look for</button>
             </div>
         </div>
           <div className="t-right">

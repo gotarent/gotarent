@@ -33,6 +33,9 @@ const login = () => {
                             <div className="btn">
                                 <button>Login</button>
                             </div>
+                            <div className="forgotpassword">
+                                <ul><li><a href="/forgot">Forgot password</a></li></ul>
+                            </div>
                         </form>
                     </div>
                     <div className="bottom">
@@ -43,6 +46,7 @@ const login = () => {
                             <a href="/">Signup</a>
                         </div>
                     </div>
+                    <p className="rights-l">All rights resreved 2022-2023 &#169;<a href="/" className='a-l'>gotarent</a></p>
                 </div>
             </div>
         </>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.for-main{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+.for-card{
+    width: 50vw;
+    height:100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.for-formgroup{
+    width: 30vw;
+}
+.for-field{
+    border-radius: 10px;
+    margin:2vh 1vw ;
+}
+.for-field legend{
+    /* width: 11vw; */
+    margin: 1vw;
+}
+.for-field input{
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 20vw;
+    margin:2vh 1vw ;
+}
+#submit{
+    background-color: aqua;
+    width: 30vw;
+    height:7vh;
+    border-radius: 10px;
+    margin-top: 3vh;
+}

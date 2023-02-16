@@ -15,10 +15,10 @@ const Navbar = () => {
             </div>
             <div className="right-nav">
               <li>
-                <a to = "/login">Log-In</a>
+                <a href="/login">Log-In</a>
               </li>
               <li>
-                <a to = "/Signup">Sign-Up</a>
+                <a href="/Signup">Sign-Up</a>
               </li>
               <div className="search">
                 <i className="fa-sharp fa-solid fa-magnifying-glass"></i>

@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* body{
+    height:314vh ;
+} */
 .home{
     margin:1rem 1rem;
     height: 100vh;
@@ -115,12 +118,12 @@
     flex-direction: column;
     height:23vh;
 }
-.btn-group{
+.butn-group{
     display: flex;
     width: 20vw;
     justify-content: space-between;
 }
-.btn-group button{
+.butn-group button{
     width: 7vw;
     border-radius: 10px;
     border: none;
@@ -134,7 +137,8 @@
     background-color: white;
 
 }
-.right{
+
+.right {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -144,17 +148,19 @@
     text-transform: capitalize;
 }
 .card-ok{
-    height: fit-content;
+    height: 15vh;
+    width: 15vw;
 }
 .card-ok img{
     height: 15vh;
     border-radius: 10px;
     box-shadow:rgb(140, 129, 129) 1px 1px 7px 0px;
 }
-.text-area{
+.text-area {
     background-color: aqua;
     border-radius: 10px;
     text-align: center;
+    width: 12vw;
 }
 .pri-a-text{
     font-weight: 700;
@@ -172,7 +178,7 @@
     width: 75vw;
     flex-direction: column;
     justify-content: flex-end;
-    height: 8vw;
+    height: 14vh;
     position: relative;
     margin-left: 4vh;
 }
@@ -185,7 +191,7 @@
     align-items: center;
     margin: auto;
 }
-.btn{
+.butn{
     height: 5vh;
     border-radius: 10px;
     box-shadow:rgb(140, 129, 129) 2px 2px 10px;
@@ -229,7 +235,7 @@
     width:49%;
 }
 .tl-btn{
-    margin-left: 2vw;
+    margin: 2vw;
 }
 .tl-btn button{
     width: 7vw;

@@ -6,13 +6,13 @@ import './App.css';
 // import Login from './components/pages/login';
 // import Sup from './components/pages/Sup';
 import Linking from "./components/pages/Linking"
-import Otp from "./components/pages/Otp"
-
+// import Otp from "./components/pages/Otp"
+// import Forgot from '../src/components/pages/Forgot';
 function App() {
   return (
 <>
-  <Otp/>
-
+  {/* <Otp/> */}
+  {/* <Forgot/> */}
     <Linking/>
 </>
   );

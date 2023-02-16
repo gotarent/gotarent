@@ -26,19 +26,22 @@
     position: relative;
     top: -16vh;
 }
-.o-form fieldset{
-    height: 7vh;
-    border-radius: 10px;
+.o-form legend{
+    margin: 0 0 2vh 0;
+    font-weight: 600;
 }
 .o-form input{
     width: 20vw;
+    height: 5vh;
     border-radius: 10px;
-    border: none;
+    /* border: none; */
     text-align: center;
+    font-weight: 600;
+    font-size: medium;
 }
 .resend{
-    
-    
+    margin-top: 1vh;
+    text-align: center;
 }
 .resend ul{
     list-style: none;
@@ -52,11 +55,11 @@
     display: flex;
     justify-content: center;
 }
-.o-btn button{
+.o-btn button {
     background-color: aqua;
-    width: 20vh;
-    height: 5vh;
-    margin-top: 3vh;
+    width: 32vh;
+    height: 6vh;
+    margin-top: 1.5vh;
     border: none;
     border-radius: 10px;
 }

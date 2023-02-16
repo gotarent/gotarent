@@ -8,7 +8,7 @@
 }
 .sec-container{
     max-width: 50vw;
-    height: 90vh;
+    height: 99vh;
     background-color: white;
     margin: auto;
     border-top-right-radius: 6rem;
@@ -61,23 +61,40 @@
 } */
 .form-group fieldset{
     max-width: 50%;
-    height: 2.5rem;
+    height: 3.5rem;
     margin: 1.8rem auto;
     border-color: aqua;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
+}
+.form-group fieldset legend{
+    margin: 0 3vw;
+    width: 3vw;
 }
 .form-group fieldset input{
     width: 15vw;
     outline: none;
     border: none;
+    text-align: center;
     
+}
+.forgotpassword{
+}
+.forgotpassword ul li{
+    list-style: none;
+    text-align: center;
+    margin: auto;
+}
+.forgotpassword ul li a{
+    text-decoration: none;
+    color: black;
 }
 .form-group .btn{
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-    padding: 1rem;
+    /* padding: 1rem; */
+    margin: 2vh;
     
 }
 .form-group .btn button{
@@ -88,7 +105,6 @@
     background-color: rgb(33, 255, 255);
     border: 0px;
     border-radius: 3rem;
-
 }
 .form-group .btn button:hover{
     transition: 0.5s;
@@ -116,4 +132,15 @@
     align-items: center;
     margin:0.5rem ;
     height: 2.5rem;
+}
+.rights-l{
+    position: absolute;
+    bottom: 3vh;
+    border-bottom: 2px solid black;
+    width: 39vw;
+    text-align: center;
+    /* margin-top: 3vh; */
+}
+.a-l{
+    text-decoration: none;
 }

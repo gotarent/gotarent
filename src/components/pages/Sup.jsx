@@ -21,10 +21,10 @@ const Sup = () => {
               just a few clicks, start your journey now!
             </p>
           </div>
-          <div className="form-group">
+          <div className="si-form-group">
             <form action="/otp">
               <fieldset>
-                <legend>E-mail</legend>
+                <legend className="em">E-mail</legend>
                 <input
                   type="email"
                   name="email"
@@ -32,22 +32,26 @@ const Sup = () => {
                 />
               </fieldset>
               <fieldset>
-                <legend>Password</legend>
-                <input type="password" name="password" placeholder="********" />
+                <legend className="em">Password</legend>
+                <input type="password" name="password" placeholder="************************" />
               </fieldset>
               <fieldset>
-                <legend>Confirm Password</legend>
-                <input type="password" name="password" placeholder="********" />
+                <legend id="con">Confirm Password</legend>
+                <input type="password" name="password" placeholder="************************" />
               </fieldset>
+              <div className="label">
+            <input type="checkbox"/>
+            <label>I agree to all the <a href="/terms" className="a">terms and conditions.</a> </label>
+            {/* <div className="tc">
+              <ul><li><a href="/termsandcondition">terms and condition</a></li></ul>
+            </div> */}
+          </div>
               <div className="btn">
-                <button>Sign-up</button>
+                <button type="submit">Sign-up</button>
               </div>
             </form>
           </div>
-          <div className="label">
-            <input type="radio"/>
-            <label>I agree all the terms and conditions</label>
-          </div>
+          
           <div className="bottom">
             <div className="para">
               <p>Already A User ?</p>
@@ -57,6 +61,8 @@ const Sup = () => {
             </div>
           </div>
         </div>
+
+        <p className="rights ">All rights resreved 2022-2023 &#169; gotarent</p>
       </div>
     </>
   );
