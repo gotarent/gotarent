@@ -5,6 +5,7 @@ import BasicForm from "./login";
 import Otp from "../pages/Otp";
 import Home from "./Home";
 import Forgot from "./Forgot";
+import Email from "./Email";
 const Linking = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Linking = () => {
           <Route path="/Login" element={<BasicForm />} />
           <Route path="/otp" element={<Otp />} />
           <Route path="/forgot" element={<Forgot />} />
+          <Route path="/email" element={<Email/>} />
         </Routes>
       </Router>
     </>

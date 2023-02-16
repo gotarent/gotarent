@@ -21,20 +21,20 @@ const login = () => {
                         <p><span>"Welcome back!</span> Let's find your next home away from home!"</p>
                     </div>
                     <div className="form-group">
-                        <form action="/otp">
+                        <form action="/main">
                             <fieldset>
                                 <legend>E-mail</legend>
-                                <input type="email" name="email" placeholder='contact@gotarent.com' />
+                                <input type="email" name="email" placeholder='contact@gotarent.com' required />
                             </fieldset>
                             <fieldset>
                                 <legend>Password</legend>
-                                <input type="password" name="password" placeholder='********' />
+                                <input type="password" name="password" placeholder='********' required/>
                             </fieldset>
                             <div className="btn">
                                 <button>Login</button>
                             </div>
                             <div className="forgotpassword">
-                                <ul><li><a href="/forgot">Forgot password</a></li></ul>
+                                <ul><li><a href="/email">Forgot password</a></li></ul>
                             </div>
                         </form>
                     </div>
@@ -43,7 +43,7 @@ const login = () => {
                             <p>Not a user yet!</p>
                         </div>
                         <div className="link-signup">
-                            <a href="/">Signup</a>
+                            <a href="/signup">Signup</a>
                         </div>
                     </div>
                     <p className="rights-l">All rights resreved 2022-2023 &#169;<a href="/" className='a-l'>gotarent</a></p>

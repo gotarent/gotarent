@@ -28,19 +28,19 @@ const Sup = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="contact@gotarent.com"
+                  placeholder="contact@gotarent.com" required
                 />
               </fieldset>
               <fieldset>
                 <legend className="em">Password</legend>
-                <input type="password" name="password" placeholder="************************" />
+                <input type="password" name="password" placeholder="************************" required />
               </fieldset>
               <fieldset>
                 <legend id="con">Confirm Password</legend>
-                <input type="password" name="password" placeholder="************************" />
+                <input type="password" name="password" placeholder="************************" required/>
               </fieldset>
               <div className="label">
-            <input type="checkbox"/>
+            <input type="checkbox" required/>
             <label>I agree to all the <a href="/terms" className="a">terms and conditions.</a> </label>
             {/* <div className="tc">
               <ul><li><a href="/termsandcondition">terms and condition</a></li></ul>
@@ -57,7 +57,7 @@ const Sup = () => {
               <p>Already A User ?</p>
             </div>
             <div className="link-signup">
-              <a href="/">Log-in</a>
+              <a href="/login">Log-in</a>
             </div>
           </div>
         </div>

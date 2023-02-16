@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.e-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+.e-card{
+    width: 50vw;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+.e-card form fieldset{
+    width: 20vw;
+    height: 7vh;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+.e-Img img{
+    width: 20vw;
+    margin-top: 10vh;
+}
+.e-em{
+    margin: 0 2vw 0 2vw;
+}
+.e-card form input{
+    outline: none;
+    border: none;
+    width: 19vw;
+    height: 6vh;
+    text-align: center;
+    font-size: medium;
+    font-family: monospace;
+}
+.e-btn {
+    display: flex;
+    justify-content: center;
+    margin: 2vh 0 0 0;
+}
+.e-btn button{
+    width: 20vw;
+    height: 5vh;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+}

@@ -11,8 +11,7 @@ const Otp = () => {
                         <p className=''></p>
                         <form action="/" className='o-form'>
                         <legend> Enter your otp</legend>
-                            <input type="number" placeholder='OTP'/>
-
+                            <input type="number" placeholder='OTP required'/>
                             <div className="resend">
                                 <ul><li> <a href="">resend otp?</a></li></ul>
                             </div>
