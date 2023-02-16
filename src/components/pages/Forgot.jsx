@@ -10,11 +10,11 @@ const Forgot = () => {
                     <form action="/otp" method="get">
                         <fieldset className='for-field'>
                             <legend>new password</legend>
-                            <input type="password"placeholder='newpassword' />
+                            <input type="password"placeholder='newpassword'required />
                         </fieldset>
                         <fieldset className='for-field'>
                             <legend>confirm password</legend>
-                            <input type="password" placeholder='confirm password' />
+                            <input type="password" placeholder='confirm password' required/>
                         </fieldset>
                         <button type="submit" id='submit'>submit</button>
                     </form>

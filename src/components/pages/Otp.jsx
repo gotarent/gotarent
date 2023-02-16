@@ -9,7 +9,7 @@ const Otp = () => {
                     {/* <img src={limg} alt="" /> */}
                     <div className="o-from-group">
                         <p className=''></p>
-                        <form action="/" className='o-form'>
+                        <form action="/forgot" className='o-form'>
                         <legend> Enter your otp</legend>
                             <input type="number" placeholder='OTP required'/>
                             <div className="resend">
