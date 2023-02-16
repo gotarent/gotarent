@@ -18,18 +18,20 @@ route.post(
   [
     check("name", "Name cannot be empty").exists().isLength({ min: 5 }),
     check("email", "Enter valid email").isEmail().normalizeEmail(),
-    check("phone", "Enter valid number")
-      .isNumeric()
+    // check("phone", "Enter valid number")
+    //   .isNumeric()
+    //   .exists()
+    //   .isLength({ min: 10 }),
+    check("password", "Password connot be lesser than 8 characters")
       .exists()
-      .isLength({ max: 10 }),
-    check("password", "Enter valid password").exists().isLength({ min: 8 }),
+      .isLength({ min: 8 }),
   ],
   async (req, res) => {
-    const { name, email, phone, password } = req.body
+    const { name, email, password } = req.body
     const error = validationResult(req)
     if (!error.isEmpty()) {
       const alert = error.array()
-      return res.status(404).json({ alert })
+      return res.status(404).json({ message: alert })
     }
     const userEmail = await User.findOne({ email: email })
     if (userEmail) {
@@ -38,18 +40,16 @@ route.post(
         .json({ status: 404, message: "Email Already Exists" })
     }
     const hashPassword = await bcrypt.hash(password, 10)
-    const saveUsers = new User({ name, email, phone, password: hashPassword })
+    const saveUsers = new User({ name, email, password: hashPassword })
     const result = await saveUsers.save()
     if (!result) {
       return res.status(200).json({ message: "Signup UnSuccessful" })
     }
     await sendMail(email, result._id.toString())
-    res
-      .status(200)
-      .json({
-        message: "Signup Successful and Email Send Successfully",
-        userId: result._id,
-      })
+    res.status(200).json({
+      message: "Signup Successful and Email Send Successfully",
+      userId: result._id,
+    })
   }
 )
 
