@@ -21,21 +21,12 @@
 }
 .img{
     display: flex;
-    /* justify-content: ; */
     
 }
 .img .left{
     max-width:50%;
-    /* padding: 1rem; */
 }
-/* .img .right{
-    max-width: 50%;
-    padding: 5rem; */
 
-
-/* .img .right img{
-    max-width: 2rem;
-} */
 .head-text{
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +47,7 @@
     font-weight: bold;
     color: #71bdf6;
 }
-/* .form-group{
 
-    
-
-} */
 .si-form-group fieldset{
     max-width: 50%;
     height: 3.5rem;
@@ -85,9 +72,7 @@
 }
 .si-form-group .btn button{
     padding: 2vh 8vw;
-    /* max-width: 50rem; */
     font-size: 1rem;
-    /* background-color: #71bdf6; */
     background-color: rgb(33, 255, 255);
     border: 0px;
     border-radius: 10px;
@@ -152,5 +137,6 @@
     border-bottom: 2px solid black;
     width: 31vw;
     text-align: center;
-    /* margin-top: 3vh; */
+    
+    
 }

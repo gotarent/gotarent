@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from "react-router-dom";
 import './nav.css'
+const search = require("../imges/search.png")
 const logo = require("../imges/logo.png")
 const Navbar = () => {
   return (
@@ -21,8 +22,11 @@ const Navbar = () => {
                 <a href="/Signup">Sign-Up</a>
               </li>
               <div className="search">
-                <i className="fa-sharp fa-solid fa-magnifying-glass"></i>
+                {/* <img src={search} alt="" /> */}
+                <form action="/" method="get">
                <input type="text" placeholder='Search Your Rental' className='myInput'/>
+               <button type="submit">search</button>
+               </form>
               </div>
             </div>
         </ul>

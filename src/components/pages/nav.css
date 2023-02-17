@@ -30,6 +30,11 @@
 .left-nav .list-item{
     display: flex;
 }
+.logo {
+    position: absolute;
+    top: 3px;
+    width: 12rem;
+}
 .right-nav{
     width: 50vw;
     display: flex;
@@ -37,23 +42,38 @@
     justify-content: right;
 }
 .right-nav input{
-    border: 1px solid #2ea3e7;
-    margin-right: 2rem;
-    margin-top: 22px;
-    width: 20em;
-    height: 3em;
-   text-align: center;
+    margin: unset;
+    position: relative;
+    top: 2vh;
+    width: 15vw;
+    height: 5vh;
+    /* border-radius: 10px; */
 }
 .right-nav li a{
     text-decoration: none;
     color: black;
 }
-.logo {
-    position: absolute;
-    top: 3px;
-    width: 12rem;
+
+.search{
+    width: 14vw;
 }
-.search i{
+.search img{
+
+    height: 3vh;
+    z-index: 1;
+
+}
+.search form{
+    height: 2vh;
+    width: fit-content;
+}
+.search form button{
+    border: none;
+    background-color: aqua;
     position: relative;
-    right: -3rem;
-}
+    top: -2.5vh;
+    height: 3vh;
+    width: 5vw;
+    left: -1vw;
+    border-radius: 10px;
+} 

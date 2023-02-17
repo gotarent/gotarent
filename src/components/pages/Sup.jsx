@@ -11,9 +11,6 @@ const Sup = () => {
             <div className="left">
               <img src={bluebg} alt="login" />
             </div>
-            {/* <div className="right">
-                    <img src={logo} alt="logo" />
-                </div> */}
           </div>
           <div className="head-text">
             <p>
@@ -52,9 +49,6 @@ const Sup = () => {
               <div className="label">
             <input type="checkbox" required/>
             <label>I agree to all the <a href="/terms" className="a">terms and conditions.</a> </label>
-            {/* <div className="tc">
-              <ul><li><a href="/termsandcondition">terms and condition</a></li></ul>
-            </div> */}
           </div>
               <div className="btn">
                 <button type="submit">Sign-up</button>
@@ -76,6 +70,5 @@ const Sup = () => {
       </div>
     </>
   );
-};
-
+}
 export default Sup;
