@@ -24,7 +24,7 @@ route.post(
     //   .isLength({ min: 10 }),
     check("password", "Password connot be lesser than 8 characters")
       .exists()
-      .isLength({ min: 8 }),
+      .isLength({ min: 6 }),
   ],
   async (req, res) => {
     const { name, email, password } = req.body
