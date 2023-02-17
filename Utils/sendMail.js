@@ -28,7 +28,7 @@ const sendMail = async (email, userid) => {
       user_id: userid,
       otp: otp,
       createat: Date.now(),
-      expires: Date.now() + 60000,
+      expires: Date.now() + 300000, // 5 Minutes
     })
     await verification.save()
     return info
