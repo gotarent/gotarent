@@ -7,10 +7,10 @@ const Forgot = () => {
             <div className="for-card">
                 <img src={limg} alt="" />
                 <div className="for-formgroup">
-                    <form action="/otp" method="get">
+                    <form action="/home" method="get">
                         <fieldset className='for-field'>
                             <legend>new password</legend>
-                            <input type="password"placeholder='newpassword'required />
+                            <input type="password"placeholder=' enter new password'required />
                         </fieldset>
                         <fieldset className='for-field'>
                             <legend>confirm password</legend>
