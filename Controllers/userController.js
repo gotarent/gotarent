@@ -11,7 +11,7 @@ const verifyOtp = async (req, res) => {
     }
     const userVerify = await userOtp.findOne({ user_id: _id.toString() })
     if (userVerify.expires < Date.now()) {
-      return res.satus(202).json({ status: false, message: "OTP Has Expired" })
+      return res.status(202).json({ status: false, message: "OTP Has Expired" })
     }
 
     if (otp != userVerify.otp)
