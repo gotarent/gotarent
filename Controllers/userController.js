@@ -10,6 +10,10 @@ const verifyOtp = async (req, res) => {
         .json({ status: 404, message: "Error Some Missing Fields" })
     }
     const userVerify = await userOtp.findOne({ user_id: _id.toString() })
+    if (userVerify.expires < Date.now()) {
+      return res.satus(202).json({ status: false, message: "OTP Has Expired" })
+    }
+
     if (otp != userVerify.otp)
       return res.status(406).json({ status: 406, message: "OTP not matched" })
     foundUser = await userSchema.findByIdAndUpdate(_id.toString(), {

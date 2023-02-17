@@ -12,7 +12,7 @@ const sendMail = async (email, userid) => {
         pass: process.env.PASSWORD,
       },
     })
-    const otp = getOtp.generate(6, {
+    const otp = getOtp.generate(4, {
       lowerCaseAlphabets: false,
       upperCaseAlphabets: false,
       specialChars: false,
@@ -28,7 +28,7 @@ const sendMail = async (email, userid) => {
       user_id: userid,
       otp: otp,
       createat: Date.now(),
-      expires: Date.now() + 3600000, // 1 hours
+      expires: Date.now() + 60000,
     })
     await verification.save()
     return info
