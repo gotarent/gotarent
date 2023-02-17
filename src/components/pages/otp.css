@@ -8,23 +8,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(183, 179, 179);
+    /* background-color: rgb(183, 179, 179); */
 }
 .o-card{
-    width: 50vw;
+    width: 45vw;
     height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 0 24px 24px 24px;
     box-shadow: 1px 1px 15px;
     /* margin: auto; */
 }
 .o-card img{
-    position: relative;
-    top: -16vh;
+        position: relative;
+        top: -7vh;
+        left: -26.7vh;
+    }
+
+.o-from-group{
+    height: 44vh;
 }
 .o-form legend{
     margin: 0 0 2vh 0;
@@ -33,6 +38,7 @@
 .o-form input{
     width: 20vw;
     height: 5vh;
+    border: 2px solid rgb(0, 230, 230);
     border-radius: 10px;
     /* border: none; */
     text-align: center;
@@ -47,7 +53,7 @@
     list-style: none;
 }
 .resend ul li a{
-    color: black;
+    /* color: black; */
     text-decoration: none;
 }
 .o-btn{

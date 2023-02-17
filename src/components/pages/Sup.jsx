@@ -23,14 +23,24 @@ const Sup = () => {
           </div>
           <div className="si-form-group">
             <form action="/otp">
+              
+              
+              <fieldset>
+                <legend className="em">Name</legend>
+                <input
+                  type="name"
+                  name="name"
+                  placeholder="Full Name" required
+                />
+                </fieldset>
               <fieldset>
                 <legend className="em">E-mail</legend>
                 <input
                   type="email"
-                  name="email"
+                  name="name"
                   placeholder="contact@gotarent.com" required
                 />
-              </fieldset>
+                </fieldset>
               <fieldset>
                 <legend className="em">Password</legend>
                 <input type="password" name="password" placeholder="************************" required />
