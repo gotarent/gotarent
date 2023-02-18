@@ -6,8 +6,8 @@ const verifyOtp = async (req, res) => {
     const { _id, otp } = req.body
     if (!_id || !otp) {
       return res
-        .status(400)
-        .json({ status: 404, message: "Error Some Missing Fields" })
+        .status(204)
+        .json({ status: 204, message: "Error Some Missing Fields" })
     }
     const userVerify = await userOtp.findOne({ user_id: _id.toString() })
     if (userVerify.expires < Date.now()) {
@@ -15,7 +15,7 @@ const verifyOtp = async (req, res) => {
     }
 
     if (otp != userVerify.otp)
-      return res.status(406).json({ status: 406, message: "OTP not matched" })
+      return res.status(401).json({ status: 401, message: "OTP not matched" })
     foundUser = await userSchema.findByIdAndUpdate(_id.toString(), {
       verified: true,
     })

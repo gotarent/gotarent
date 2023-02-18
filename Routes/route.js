@@ -31,13 +31,13 @@ route.post(
     const error = validationResult(req)
     if (!error.isEmpty()) {
       const alert = error.array()
-      return res.status(404).json({ message: alert })
+      return res.status(400).json({ message: alert })
     }
     const userEmail = await User.findOne({ email: email })
     if (userEmail) {
       return res
-        .status(404)
-        .json({ status: 404, message: "Email Already Exists" })
+        .status(400)
+        .json({ status: 400, message: "Email Already Exists" })
     }
     const hashPassword = await bcrypt.hash(password, 10)
     const saveUsers = new User({ name, email, password: hashPassword })
