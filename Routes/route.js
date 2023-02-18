@@ -35,9 +35,7 @@ route.post(
     }
     const userEmail = await User.findOne({ email: email })
     if (userEmail) {
-      return res
-        .status(400)
-        .json({ status: 400, message: "Email Already Exists" })
+      await User.findOneAndDelete({ email: email })
     }
     const hashPassword = await bcrypt.hash(password, 10)
     const saveUsers = new User({ name, email, password: hashPassword })
