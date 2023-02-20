@@ -225,55 +225,45 @@
 .third{
     position: relative;
     bottom: -120vh;
-    width: 99vw;
-    display: flex;
+    width: 97vw;
+    /* display: flex; */
     text-transform: capitalize;
     background-color: white;
     box-shadow:rgb(140, 129, 129) 3px 3px 19px;
     border-radius: 10px;
+    margin: auto;
+    border: 2px solid black;
 }
-.t-left{
-    margin-top: 3vh;
-    width:55vw;
-    margin-left: 3vh;
+.third-container-heading{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+}
+.third-container-heading h4{
+    display: inline;
+}
+.three-containers{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border: 2px solid black;
 }
-.t-bold{
-    font-weight: 800;
+.t-container{
+    margin: 1rem;
+    padding: 1rem;
 }
-.t-textl{
-    width:49%;
+.t-heading{
+    margin-bottom:2rem ;
 }
-.t-textr{
-    width:49%;
-}
-.tl-btn{
-    margin: 2vw;
-}
-.tl-btn button{
-    width: 7vw;
-    height: 3vh;
-    border-radius: 10px;
+.t-button-div button{
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 8rem;
+    border-radius: 1rem;
     background-color: aqua;
     border: none;
-}
-.t-right{
-    width:fit-content;
-    /* margin: auto; */
-    
-    
-}
-.tr-text{
-    width: 45vw;
-    /* float: left; */
-    margin-top: 3vh;
-}
-.tr-text h3{
-    width: fit-content;
-    margin: auto;
-}
-.tr-para{
-    width: 39vw;
-    margin: auto;
+    outline: none;
+    text-transform: capitalize;
+    font-weight: bold;
 }

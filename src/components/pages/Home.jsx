@@ -127,33 +127,51 @@ const Home = () => {
           <img src={rwave} alt="" />
         </div>
       </div>
-      <div className="third">
-        <div className="t-text">
+      {/* <div className="third">
           <p className="t-bold">your next accomodation with got a rent</p>
           <div className="t-left">
             <div className="t-textl"><h3>Easy Booking and managment</h3><p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis alias quisquam harum aliquam ratione, debitis pariatur excepturi sapiente possimus blanditiis esse, officiis, laudantium eaque. Laborum neque quos odit. Corporis exercitationem accusamus beatae facere totam quas iure magni quasi. Temporibus expedita ut sed optio nisi, provident voluptatem iusto consequuntur aliquam.</p></div>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis alias quisquam harum aliquam ratione, debitis pariatur excepturi sapiente possimus blanditiis esse, officiis, laudantium eaque. Laborum neque quos odit. Corporis exercitationem accusamus beatae facere totam quas iure magni quasi. Temporibus expedita ut sed optio nisi, provident voluptatem iusto consequuntur aliquam.</p></div>
             <div className="t-textr">
-            <h3>
-              increased efficency
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius in deserunt nobis inventore recusandae nulla sed, culpa exercitationem, esse quis voluptate quidem dolore repellat numquam modi rerum laboriosam! Voluptatem, molestiae? Repellendus incidunt inventore labore, eos a odio exercitationem, ducimus error veniam minima provident similique modi laboriosam, velit tempore quae autem.
+              <h3>
+                increased efficency
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius in deserunt nobis inventore recusandae nulla sed, culpa exercitationem, esse quis voluptate quidem dolore repellat numquam modi rerum laboriosam! Voluptatem, molestiae? Repellendus incidunt inventore labore, eos a odio exercitationem, ducimus error veniam minima provident similique modi laboriosam, velit tempore quae autem.
               </p>
             </div>
           </div>
-            <div className="tl-btn">
-              <button type="button">look for</button>
-            </div>
-        </div>
-          <div className="t-right">
-            <div className="tr-text">
-              <h3>improved costumer experience</h3>
-              <p className="tr-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt amet rerum facere inventore, aspernatur dolorum veniam repellat unde iste quibusdam. Eligendi provident aliquam modi eius eveniet id aperiam quos? Neque enim molestias modi nam, architecto ullam, quae minus ipsa provident vel at veritatis, recusandae reprehenderit non ex et autem.</p>
-            </div>
+          <div className="tr-text">
+            <h3>improved costumer experience</h3>
+            <p className="tr-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt amet rerum facere inventore, aspernatur dolorum veniam repellat unde iste quibusdam. Eligendi provident aliquam modi eius eveniet id aperiam quos? Neque enim molestias modi nam, architecto ullam, quae minus ipsa provident vel at veritatis, recusandae reprehenderit non ex et autem.</p>
           </div>
-      </div>
+        <div className="tl-btn">
+          <button type="button">look for</button>
+        </div>
+      </div> */}
+
       {/* <Footer/> */}
+
+      <div className="third">
+        <div className="third-container-heading">
+          <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
+        </div>
+        <div className="three-containers">
+          <div className="t-container ">
+            <h5 className="t-heading">aifiafajfo</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, earum reiciendis provident doloribus molestias nostrum consequatur incidunt, ullam illo, vero culpa ab maiores natus! Minima sunt labore itaque, debitis at minus quis ullam ut architecto ipsa aspernatur obcaecati eum repudiandae, sequi voluptatibus ea molestiae ipsam nemo. Voluptatum optio ratione reiciendis?</div>
+          <div className="t-container ">
+            <h5 className="t-heading">aifiafajfo</h5>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eius tenetur, nihil iusto voluptates error enim vitae! Quas excepturi quisquam ad nemo eveniet sequi odio at id mollitia iusto, beatae consequuntur error animi sapiente soluta. Officia, repudiandae, adipisci, ad earum ducimus est veritatis odit cumque fugit dolorum iure eos neque?</div>
+          <div className="t-container ">
+            <h5 className="t-heading">aifiafajfo</h5>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam aperiam voluptate magnam fuga reiciendis. Ex libero voluptatibus, porro laudantium aliquam tempora accusantium corrupti, necessitatibus sequi deleniti molestias earum nam? Quod accusantium provident, possimus dolores, unde itaque repudiandae deleniti totam, voluptatibus vero suscipit nisi deserunt tenetur tempore enim dolore iure magni!
+            lorem50</div>
+        </div>
+        <div className="t-button-div">
+          <button>go search</button>
+        </div>
+      </div>
     </>
   );
 };

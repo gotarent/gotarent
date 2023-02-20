@@ -6,6 +6,8 @@ import Otp from "../pages/Otp";
 import Home from "./Home";
 import Forgot from "./Forgot";
 import Email from "./Email";
+import Card from "./Card";
+import U_Profile from "./U_Profile";
 const Linking = () => {
   return (
     <>
@@ -17,6 +19,8 @@ const Linking = () => {
           <Route path="/otp" element={<Otp />} />
           <Route path="/forgot" element={<Forgot />} />
           <Route path="/email" element={<Email/>} />
+          <Route path="/card" element={<Card/>} />
+          <Route path="/profile" element={<U_Profile/>} />
         </Routes>
       </Router>
     </>
