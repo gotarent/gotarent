@@ -241,7 +241,7 @@
     box-shadow:rgb(140, 129, 129) 3px 3px 19px;
     border-radius: 10px;
     margin: auto;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .third-container-heading{
     margin-left: 1rem;
@@ -256,7 +256,7 @@
 .three-containers{
     display: flex;
     justify-content: space-evenly;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 .t-container{
     margin: 1rem;
