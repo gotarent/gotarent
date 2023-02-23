@@ -1,6 +1,13 @@
 import React from "react";
 import "./Home.css";
-import Navbar from "./Navbar"
+import Navbar from "./Navbar";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
+AOS.init({
+  delay:10,
+  duration:2500,
+})
 // import Footer from "../pages/footer"
 const gtk = require("../static/Picture@1x.png");
 const wave = require("../static/drawnline1@1x.png");
@@ -13,13 +20,13 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="home">
-        <div className="first-cont">
-          <div className="m-text">
+      <div className="home" >
+        <div className="first-cont" data-aos="slide-up">
+          <div className="m-text" data-aos="slide-up">
             <h1>Discover your next cozy </h1>
             <h1> retreat, now on our platform.</h1>
           </div>
-          <div className="img-group">
+          <div className="img-group" data-aos="slide-up">
             <div className="m-img">
               <img src={gtk} alt="gtk image" />
             </div>
@@ -52,7 +59,7 @@ const Home = () => {
             <p>Our rental accomodation online system provides a platform that simplifies</p>
           </div>
         </div>
-        <div className="second-cont">
+        <div className="second-cont" data-aos="slide-up">
           <div className="left">
             <div className="myImgs">
               <i class="fa-sharp fa-solid fa-user-shield fa-2xl"></i>
@@ -112,7 +119,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="blue">
+        <div className="blue" data-aos="slide-up">
           <div className="b-left">
             <p className="boldtext">
               Help us protect you from scams
@@ -152,7 +159,7 @@ const Home = () => {
 
       {/* <Footer/> */}
 
-      <div className="third">
+      <div className="third" data-aos="slide-up">
         <div className="third-container-heading">
           <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h4>
         </div>
