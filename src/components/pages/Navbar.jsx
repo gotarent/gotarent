@@ -24,7 +24,7 @@ const Navbar = () => {
           <div className="search">
             <form action="/" method="get">
               <input type="text" placeholder='Search Your Rental' className='myInput' />
-              <button type="submit">search</button>
+              {/* <button type="submit">search</button> */}
             </form>
           </div>
         </div>

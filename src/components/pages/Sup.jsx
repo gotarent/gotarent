@@ -22,8 +22,8 @@ const Sup = () => {
             <form action="/otp">
               
               
-              <fieldset>
                 <legend className="em">Name</legend>
+              <fieldset>
                 <input
                   type="name"
                   name="name"

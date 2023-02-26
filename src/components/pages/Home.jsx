@@ -1,41 +1,42 @@
 import React from "react";
 import "./Home.css";
+import Footer from "../Footer"
 import Navbar from "./Navbar";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 AOS.init({
   delay:10,
-  duration:2500,
+  duration:900,
 })
 // import Footer from "../pages/footer"
 const gtk = require("../static/Picture@1x.png");
 const wave = require("../static/drawnline1@1x.png");
 const rwave = require("../static/r-wave.jpg");
 const rectangle = require("../static/rectangular shape@1x.png");
-const card = require("../imges/card.jpg")
+const cardp = require("../imges/card.jpg")
 const date = new Date().toLocaleDateString();
 const time = new Date().toLocaleTimeString();
 const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="home" >
-        <div className="first-cont" data-aos="slide-up">
-          <div className="m-text" data-aos="slide-up">
+      <div className="home" data-aos="slide up">
+        <div className="first-cont" >
+          <div className="m-text" >
             <h1>Discover your next cozy </h1>
             <h1> retreat, now on our platform.</h1>
           </div>
-          <div className="img-group" data-aos="slide-up">
+          <div className="img-group-h">
             <div className="m-img">
               <img src={gtk} alt="gtk image" />
             </div>
             <div className="s-img">
               <img src={rectangle} alt="" />
             </div>
-            <div className="wave">
+            {/* <div className="wave">
               <img src={wave} alt="" />
-            </div>
+            </div> */}
           </div>
           <div className="red-bg">
             <div className="red-content">
@@ -90,28 +91,28 @@ const Home = () => {
           </div>
           <div className="right">
             <div className="card-ok">
-              <img src={card} alt="cardHere" className='card' />
+              <img src={cardp} alt="cardHere" className='cardp' />
               <div className="text-area">
                 <p className='pri-a-text'>this is  primary text</p>
                 <p className='sec-a-text'>this is secondary text</p>
               </div>
             </div>
             <div className="card-ok">
-              <img src={card} alt="cardHere" className='card' />
+              <img src={cardp} alt="cardHere" className='cardp' />
               <div className="text-area">
                 <p className='pri-a-text'>this is  primary text</p>
                 <p className='sec-a-text'>this is secondary text</p>
               </div>
             </div>
             <div className="card-ok">
-              <img src={card} alt="cardHere" className='card' />
+              <img src={cardp} alt="cardHere" className='cardp' />
               <div className="text-area">
                 <p className='pri-a-text'>this is  primary text</p>
                 <p className='sec-a-text'>this is secondary text</p>
               </div>
             </div>
             <div className="card-ok">
-              <img src={card} alt="cardHere" className='card' />
+              <img src={cardp} alt="cardHere" className='cardp' />
               <div className="text-area">
                 <p className='pri-a-text'>this is  primary text</p>
                 <p className='sec-a-text'>this is secondary text</p>
@@ -134,30 +135,8 @@ const Home = () => {
           <img src={rwave} alt="" />
         </div>
       </div>
-      {/* <div className="third">
-          <p className="t-bold">your next accomodation with got a rent</p>
-          <div className="t-left">
-            <div className="t-textl"><h3>Easy Booking and managment</h3><p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nobis alias quisquam harum aliquam ratione, debitis pariatur excepturi sapiente possimus blanditiis esse, officiis, laudantium eaque. Laborum neque quos odit. Corporis exercitationem accusamus beatae facere totam quas iure magni quasi. Temporibus expedita ut sed optio nisi, provident voluptatem iusto consequuntur aliquam.</p></div>
-            <div className="t-textr">
-              <h3>
-                increased efficency
-              </h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius in deserunt nobis inventore recusandae nulla sed, culpa exercitationem, esse quis voluptate quidem dolore repellat numquam modi rerum laboriosam! Voluptatem, molestiae? Repellendus incidunt inventore labore, eos a odio exercitationem, ducimus error veniam minima provident similique modi laboriosam, velit tempore quae autem.
-              </p>
-            </div>
-          </div>
-          <div className="tr-text">
-            <h3>improved costumer experience</h3>
-            <p className="tr-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt amet rerum facere inventore, aspernatur dolorum veniam repellat unde iste quibusdam. Eligendi provident aliquam modi eius eveniet id aperiam quos? Neque enim molestias modi nam, architecto ullam, quae minus ipsa provident vel at veritatis, recusandae reprehenderit non ex et autem.</p>
-          </div>
-        <div className="tl-btn">
-          <button type="button">look for</button>
-        </div>
-      </div> */}
+      
 
-      {/* <Footer/> */}
 
       <div className="third" data-aos="slide-up">
         <div className="third-container-heading">
@@ -178,7 +157,9 @@ const Home = () => {
         <div className="t-button-div">
           <button>go search</button>
         </div>
+      <Footer/> 
       </div>
+
     </>
   );
 };

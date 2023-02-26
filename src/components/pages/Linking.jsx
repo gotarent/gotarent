@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SignupForm from "./Sup";
 import BasicForm from "./login";
-// import Navbar from './Navbar';
+
 import Otp from "../pages/Otp";
 import Home from "./Home";
 import Forgot from "./Forgot";
@@ -21,6 +21,7 @@ const Linking = () => {
           <Route path="/email" element={<Email/>} />
           <Route path="/card" element={<Card/>} />
           <Route path="/profile" element={<U_Profile/>} />
+
         </Routes>
       </Router>
     </>

@@ -35,19 +35,21 @@
     top: 3px;
     width: 12rem;
 }
-.right-nav{
+.right-nav {
     width: 50vw;
     display: flex;
     text-align: right;
     justify-content: right;
     margin-right: 1rem;
+    align-items: center;
 }
 .right-nav input{
     margin: unset;
     position: relative;
-    top: 2vh;
+    top: -1vh;
     width: 15vw;
     height: 5vh;
+    text-align: center;
     /* border-radius: 10px; */
 }
 .right-nav li a{
